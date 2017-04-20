@@ -35,14 +35,21 @@
 - Introducing global feature flagging would allow for Continuous Deployment, as you would be able to turn on/off code in production from an interface of some kind, allowing us to safely commit continuously
 
 ## Testing Instructions
+Tox is available for testing across all versions of Python. The Make build system is also available, with a 'Make test' command to run tests. This could further be split into 'Make unit', 'Make integration', 'Make functional', etc...
 ```
 $ cd ${projectdir}
 $ make test
 ```
 
 ## Installation Instructions
+The Make build system is available in this project to make common tasks easier to reason about. Installation is a simple two-liner. This is a very basic example of the installation process, you should consider installing this package into a virtualenv.
 
 ```
 $ cd ${projectdir}
 $ make install
 ```
+
+## Github-Flow
+The project would follow a Github-Flow style of merging, making master our main integration branch from feature branches. Master should always be deployable.
+
+Starting in your development feature branch, you should run Unit tests locally before pushing your code to Github. After merging into Master, a build should automatically kick off on a dev server to run unit tests. If Unit tests pass, another build should kick off for the staging environment, where integration, and functional tests should run.

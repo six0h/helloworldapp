@@ -27,6 +27,7 @@
 ## Items not integrated that were planned
 - Cloudwatch for CPU metric to autoscale
 - Application logging to ElasticSearch Service
+- AWS CodeDeploy
 
 ## Things I would do differently given proper planning and time
 

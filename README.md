@@ -2,6 +2,15 @@
 # Hello World App for Boeing
 ============================
 
+## Assumptions
+
+- App must live in VPC with proper network architecture
+- Terraform is used for cloud agnostic purposes
+- High-Availability is ok in single region (this is bad practice in real non-contrived situations)
+- I will use all AWS services
+
+## General Info
+
 - You can find all infrastructure code in the terraform folder
 - Instance provisioning is done via cloud-init
 - The microservice is written in python
@@ -13,13 +22,6 @@
 - There is an ELB servicing the AutoScaling Group
 - There is a security group around the instances that only allow web traffic
 - Everything is contained in a VPC with a single public subnet in us-east-1a
-
-## Assumptions
-
-- App must live in VPC with proper network architecture
-- Terraform is used for cloud agnostic purposes
-- High-Availability is ok in single region (this is bad practice in real non-contrived situations)
-- I will use all AWS services
 
 ## Things I would do differently given proper planning and time
 

@@ -1,6 +1,5 @@
 
 # Hello World App for Boeing
-============================
 
 ## Assumptions
 
@@ -49,7 +48,7 @@ $ cd ${projectdir}
 $ make install
 ```
 
-## Github-Flow
+## Git Workflow
 The project would follow a Github-Flow style of merging, making master our main integration branch from feature branches. Master should always be deployable.
 
 Starting in your development feature branch, you should run Unit tests locally before pushing your code to Github. After merging into Master, a build should automatically kick off on a dev server to run unit tests. If Unit tests pass, another build should kick off for the staging environment, where integration, and functional tests should run.

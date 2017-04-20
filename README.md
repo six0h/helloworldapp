@@ -28,6 +28,7 @@
 - Cloudwatch for CPU metric to autoscale
 - Application logging to ElasticSearch Service
 - AWS CodeDeploy
+- Git Tags for Versioning Code (Python code is versioned, just not infrastructure)
 
 ## Things I would do differently given proper planning and time
 

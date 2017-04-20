@@ -34,7 +34,13 @@
 - Everything is currently based around VM architecture, whereas Docker is much better for internal environments, and given proper scheduling, is very powerful in production
 - Introducing global feature flagging would allow for Continuous Deployment, as you would be able to turn on/off code in production from an interface of some kind, allowing us to safely commit continuously
 
-# Installation Instructions
+## Testing Instructions
+```
+$ cd ${projectdir}
+$ make test
+```
+
+## Installation Instructions
 
 ```
 $ cd ${projectdir}

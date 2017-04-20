@@ -25,6 +25,7 @@
 
 ## Things I would do differently given proper planning and time
 
+- Vagrant or docker for local dev env
 - Use jenkins instead of code build
 - Green/Blue deploys instead of rolling deploys to improve deploy confidence
 - Chef or Ansible provisioning instead of Bash
@@ -32,3 +33,10 @@
 - The introduction of real config management would also make the possibility of configuring environments much more realistic
 - Everything is currently based around VM architecture, whereas Docker is much better for internal environments, and given proper scheduling, is very powerful in production
 - Introducing global feature flagging would allow for Continuous Deployment, as you would be able to turn on/off code in production from an interface of some kind, allowing us to safely commit continuously
+
+# Installation Instructions
+
+```
+$ cd ${projectdir}
+$ make install
+```

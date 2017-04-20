@@ -1,0 +1,15 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo Installing...
+      - cd /var/www
+	  - make install
+  build:
+    commands:
+      - echo Starting build...
+      - tox
+  post_build:
+    commands:
+      - echo Build completed on `date`

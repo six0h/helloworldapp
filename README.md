@@ -7,6 +7,8 @@
 - Terraform is used for cloud agnostic purposes
 - High-Availability is ok in single region (this is bad practice in real non-contrived situations)
 - I will use all AWS services
+- I will not use OpsWorks, or Elastic Beanstalk, those are too easy, and don't show an understanding of the underlying principals. I realize this might affect the outcome,
+  but should be effective in showing a deeper understanding of how these technologies are built and used.
 
 ## General Info
 
@@ -21,6 +23,10 @@
 - There is an ELB servicing the AutoScaling Group
 - There is a security group around the instances that only allow web traffic
 - Everything is contained in a VPC with a single public subnet in us-east-1a
+
+## Items not integrated that were planned
+- Cloudwatch for CPU metric to autoscale
+- Application logging to ElasticSearch Service
 
 ## Things I would do differently given proper planning and time
 

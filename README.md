@@ -31,7 +31,7 @@
 - Multi-region high-availability using ELB and Route53 Latency based routing
 - The introduction of real config management would also make the possibility of configuring environments much more realistic
 - Everything is currently based around VM architecture, whereas Docker is much better for internal environments, and given proper scheduling, is very powerful in production
-- Introducing global feature flagging would allow for Continuous Deployment, as you would be able to turn on/off code in production from an interface of some kind, allowing us to safely commit continuously
+- Introducing global feature flagging would allow for Continuous Deployment, as you would be able to turn on/off code in production from an interface, allowing us to safely commit continuously
 
 ## Testing Instructions
 Tox is available for testing across all versions of Python. The Make build system is also available, with a 'Make test' command to run tests. This could further be split into 'Make unit', 'Make integration', 'Make functional', etc...

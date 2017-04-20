@@ -1,9 +1,3 @@
-# Assumptions
-
-- App must live in VPC with proper network architecture
-- Terraform is used for cloud agnostic purposes
-- High-Availability is ok in single region (this is bad practice in real non-contrived situations)
-- I will use all AWS services
 
 # Hello World App for Boeing
 ============================
@@ -20,8 +14,14 @@
 - There is a security group around the instances that only allow web traffic
 - Everything is contained in a VPC with a single public subnet in us-east-1a
 
-# Things I would do differently given proper planning and time
-==============================================================
+## Assumptions
+
+- App must live in VPC with proper network architecture
+- Terraform is used for cloud agnostic purposes
+- High-Availability is ok in single region (this is bad practice in real non-contrived situations)
+- I will use all AWS services
+
+## Things I would do differently given proper planning and time
 
 - Use jenkins instead of code build
 - Green/Blue deploys instead of rolling deploys to improve deploy confidence

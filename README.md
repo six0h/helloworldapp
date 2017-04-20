@@ -14,7 +14,7 @@
 
 - You can find all infrastructure code in the terraform folder
 - Instance provisioning is done via cloud-init
-- The microservice is written in python
+- The microservice is written in python, using the Flask micro-framework
 - Python test environment provided by tox
 - Testing can be run locally after app is installed, or pushed into AWS CodeBuild (WIP)
 - Deploying is done with AWS Code Pipeline (WIP)
